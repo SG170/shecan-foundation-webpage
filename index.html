@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>She Can Foundation</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',sans-serif;color:#2c1f1f;background:#fff}
+  .topbar{background:#c0394b;color:#fff;text-align:center;padding:10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+  header{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid #f0d0d4}
+  .logo{font-size:1.3rem;font-weight:700;color:#c0394b}
+  .logo span{color:#2c1f1f}
+  nav a{margin-left:20px;font-size:.82rem;color:#6b5e5e;text-decoration:none;text-transform:uppercase;letter-spacing:.06em}
+  nav a:hover{color:#c0394b}
+
+  /* HERO */
+  .hero{display:grid;grid-template-columns:1fr 1fr;min-height:360px}
+  .hero-text{padding:48px 36px;display:flex;flex-direction:column;justify-content:center;background:#fdf6f0}
+  .tag{display:inline-block;background:#f9e8eb;color:#c0394b;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:16px;width:fit-content}
+  h1{font-size:2.4rem;font-weight:800;line-height:1.1;color:#2c1f1f;margin-bottom:14px}
+  h1 em{font-style:italic;color:#c0394b}
+  .hero-text p{font-size:.92rem;color:#6b5e5e;line-height:1.7;margin-bottom:22px}
+  .btn{display:inline-block;background:#c0394b;color:#fff;font-size:.82rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;padding:.7rem 2rem;border-radius:30px;border:none;cursor:pointer}
+  .btn:hover{background:#8b1a2a}
+  .hero img{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* ABOUT */
+  .about{display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:center;padding:48px 36px;background:#fff}
+  .about img{width:100%;height:300px;object-fit:cover;border-radius:12px;display:block}
+  .label{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#c0394b;margin-bottom:8px;display:block}
+  h2{font-size:1.5rem;font-weight:700;color:#2c1f1f;margin-bottom:12px;line-height:1.25}
+  .about p{font-size:.88rem;color:#6b5e5e;line-height:1.75}
+  .pills{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+  .pill{background:#f9e8eb;color:#8b1a2a;font-size:.75rem;font-weight:600;padding:5px 14px;border-radius:20px;border-left:3px solid #c0394b;border-radius:0}
+
+  /* CTA */
+  .cta-band{background:#c0394b;color:#fff;text-align:center;padding:40px 36px}
+  .cta-band h2{color:#fff;margin-bottom:10px;font-size:1.6rem}
+  .cta-band p{font-size:.9rem;opacity:.88;margin-bottom:20px}
+  .btn-white{background:#fff;color:#c0394b;display:inline-block;font-size:.82rem;font-weight:600;padding:.7rem 2rem;border-radius:30px;text-decoration:none;text-transform:uppercase;letter-spacing:.05em}
+
+  /* FOOTER */
+  footer{background:#2c1f1f;color:rgba(255,255,255,.6);display:flex;align-items:center;justify-content:space-between;padding:22px 36px;font-size:.78rem;flex-wrap:wrap;gap:10px}
+  footer strong{color:#fff;font-size:.95rem}
+  .heart{color:#e8a0a8}
+</style>
+</head>
+<body>
+
+<div class="topbar">Empowering Women · Transforming Communities</div>
+
+<header>
+  <div class="logo">She<span>Can</span> Foundation</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#cta">Donate</a>
+    <a href="#footer">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <span class="tag">Est. 2015</span>
+    <h1>She <em>Can.</em><br>She <em>Will.</em></h1>
+    <p>Uplifting women through education, mentorship, and community-driven change across India.</p>
+    <a href="#cta" class="btn">Join the Movement</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2?w=900&q=80" alt="Women empowerment"/>
+</div>
+
+<!-- ABOUT -->
+<div class="about" id="about">
+  <img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=600&q=80" alt="Women workshop"/>
+  <div>
+    <span class="label">About Us</span>
+    <h2>Building a World Where Every Woman Thrives</h2>
+    <p>She Can Foundation believes every woman deserves the chance to dream, grow, and lead. We run skill-building workshops, scholarships, and mentorship programs that create real, lasting change in grassroots communities across India.</p>
+    <div class="pills">
+      <span class="pill">Education</span>
+      <span class="pill">Mentorship</span>
+      <span class="pill">Community</span>
+      <span class="pill">12,000+ Lives Impacted</span>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-band" id="cta">
+  <h2>She Can — and So Can You.</h2>
+  <p>Volunteer, donate, or simply spread the word. Every action counts.</p>
+  <a href="mailto:hello@shecancares.org" class="btn-white">Support Our Mission</a>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div><strong>SheCan Foundation</strong><br>hello@shecancares.org · +91 98765 43210</div>
+  <div>Made with <span class="heart">&#9829;</span> for women everywhere</div>
+  <div>© 2025 She Can Foundation. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
